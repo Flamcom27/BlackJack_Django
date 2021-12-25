@@ -10,3 +10,9 @@ def test_card():
     list_of_cards = [models.Card(i, j) for i in ranks for j in suits]
     print(list_of_cards)
 
+
+def test_card_2():
+    a = models.Card('A', 'diamonds')
+    print(a.name, a.rank, a.suit)
+
+test_card_2()
